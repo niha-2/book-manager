@@ -52,4 +52,8 @@ class BookRepositoryImpl(
     override fun update(id: Long, title: String?, author: String?, releaseDate: LocalDate?) {
         bookMapper.updateByPrimaryKeySelective(BookRecord(id, title, author, releaseDate))
     }
+
+    override fun delete(id: Long) {
+        bookMapper.deleteByPrimaryKey(id)
+    }
 }
