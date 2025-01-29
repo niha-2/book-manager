@@ -36,6 +36,9 @@ dependencies {
 	 // MyBatis Generator
 	mybatisGenerator("org.mybatis.generator:mybatis-generator-core:1.4.0")
 
+	// Spring Security
+	implementation("org.springframework.boot:spring-boot-starter-security")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.4")
