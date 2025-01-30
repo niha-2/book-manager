@@ -43,6 +43,9 @@ dependencies {
 	implementation("org.springframework.session:spring-session-data-redis")
 	implementation("redis.clients:jedis")
 
+	// Spring AOP
+	implementation("org.springframework.boot:spring-boot-starter-aop")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.4")
