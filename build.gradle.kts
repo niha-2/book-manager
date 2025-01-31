@@ -47,9 +47,20 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-aop")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.4")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	// JUnit
+	testImplementation("org.junit.jupiter:junit-jupiter-engine:5.11.4")
+	// AssertJ
+	testImplementation("org.assertj:assertj-core:3.27.3")
+
+	// mockito
+	testImplementation("org.mockito:mockito-core:5.15.2")
+//	testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
 }
 
 kotlin {
